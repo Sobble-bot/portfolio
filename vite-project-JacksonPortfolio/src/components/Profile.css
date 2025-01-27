@@ -1,0 +1,30 @@
+.profile-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem; 
+  }
+  
+  .left-section {
+    flex: 1;
+    max-width: 50%; 
+  }
+  
+  .right-section {
+    flex: 1; 
+    max-width: 50%; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .profile-picture {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+.intro{
+    font-size: 32px;
+}

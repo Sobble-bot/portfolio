@@ -1,0 +1,15 @@
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1e1e1e;
+    margin-top: auto;
+  }
+  
+  .linkedin,
+  .github {
+    background-color: #ffffff;
+    margin: 2px;
+    padding: 0;
+    border: none;
+  }
+  
