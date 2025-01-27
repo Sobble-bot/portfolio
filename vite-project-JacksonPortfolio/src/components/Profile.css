@@ -4,6 +4,7 @@
     align-items: center;
     padding: 4rem 2rem;
     gap: 2rem; 
+    margin: 50px;
   }
   
   .left-section {
@@ -20,11 +21,9 @@
   
   .profile-picture {
     max-width: 100%; 
-    height: auto;
+    height: 500px;
+    max-height: fit-content;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
   
-.intro{
-    font-size: 32px;
-}
