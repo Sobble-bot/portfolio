@@ -45,10 +45,9 @@ a {
 }
 
 .nav-links a:hover {
-  color: #1e90ff;
+  color: #323539;
 }
 
-/* Profile Section */
 .profile-section {
   display: flex;
   justify-content: space-between;
@@ -101,10 +100,16 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding: 1rem 0;
   background-color: #1e1e1e;
   margin-top: auto;
+}
+
+.linkedin {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
