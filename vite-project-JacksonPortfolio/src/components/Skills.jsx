@@ -1,12 +1,11 @@
 import './Skills.css';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa';
-import { SiTypescript, SiKotlin, SiLinux, SiMysql, SiMongodb, SiExpress, SiFlask } from 'react-icons/si';
+import { SiKotlin, SiLinux, SiMysql, SiMongodb, SiExpress, SiFlask } from 'react-icons/si';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 /> },
   { name: 'CSS3', icon: <FaCss3Alt /> },
   { name: 'JavaScript', icon: <FaJsSquare /> },
-  { name: 'TypeScript', icon: <SiTypescript /> },
   { name: 'Python', icon: <FaPython /> },
   { name: 'Flask', icon: <SiFlask /> },
   { name: 'Java', icon: <FaJava /> },
