@@ -18,3 +18,33 @@ h2{
   letter-spacing: 2px;
   justify-content: center;
 }
+
+/* Mobile styles (max width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .right-section img {
+    max-width: 150px; /* Adjust image size for mobile */
+    margin: 0 auto;
+  }
+}
+
