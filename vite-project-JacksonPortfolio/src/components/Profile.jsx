@@ -12,8 +12,9 @@ const Profile = () => {
           My areas of interest include in backend and frontend development. <br/>
 
           I am software developer with a passion for innovative software solutions. <br/>
-          Seeking opportunities to enhance technical skills and contribute to challenging projects. 
+          Seeking opportunities to enhance technical skills and contribute to challenging projects. <br/> <br/>
 
+          <a href='https://drive.google.com/file/d/1ZRtEea9A6xGH8Zc30pooQEGXMN9qFwta/view?usp=sharing' className='resume-button' target='blank'>Get My Resume</a>
         </p>
       </div>
       <div className="right-section">

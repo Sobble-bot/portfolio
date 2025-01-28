@@ -37,6 +37,7 @@
   .project-card h3 a {
     text-decoration: none;
     transition: color 0.3s;
+    color:#86b5ff;
   }
   
   .project-card h3 a:hover {

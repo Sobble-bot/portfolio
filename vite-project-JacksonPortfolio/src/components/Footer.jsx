@@ -7,8 +7,12 @@ const Footer = () => {
     <footer className="footer">
       <p>© 2025 Tan-Jackson Tran. All Rights Reserved.</p>
       <div>
-        <img src={linkedin30} alt="LinkedIn" className="linkedin" />
+        <a href='https://www.linkedin.com/in/tan-jackson-tran-975887338/' rel='noopener no referrer' target="_blank" >
+        <img src={linkedin30} alt="LinkedIn" className="linkedin" rel='noopener no referrer' target="_blank" />
+        </a>
+        <a href='https://github.com/Sobble-bot?tab=repositories'>
         <img src={github30} alt="GitHub" className="github" />
+        </a>
       </div>
     </footer>
   );

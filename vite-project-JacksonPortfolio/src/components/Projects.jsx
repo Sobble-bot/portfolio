@@ -29,7 +29,7 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section className="projects-section">
+  <section className="projects-section" id='projects'>
     <h2>Projects</h2>
     <p>Explore some of my projects below. Feel free to check!</p>
     <div className="projects-grid">
