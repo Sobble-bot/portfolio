@@ -47,6 +47,7 @@
   .project-card p {
     font-size: 0.9rem;
     margin: 1rem 0;
+    width: auto;
   }
   
   .project-info {

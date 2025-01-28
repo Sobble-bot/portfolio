@@ -19,7 +19,6 @@ h2{
   justify-content: center;
 }
 
-/* Mobile styles (max width: 768px) */
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
@@ -43,7 +42,7 @@ h2{
   }
 
   .right-section img {
-    max-width: 150px; /* Adjust image size for mobile */
+    max-width: 150px; 
     margin: 0 auto;
   }
 }
