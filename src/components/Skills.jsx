@@ -1,6 +1,7 @@
 import './Skills.css';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa';
-import { SiKotlin, SiLinux, SiMysql, SiMongodb, SiExpress, SiFlask } from 'react-icons/si';
+import { SiKotlin, SiLinux, SiMysql, SiMongodb, SiExpress, SiFlask, SiJinja, SiTailwindcss, SiJunit5, SiMonogame } from 'react-icons/si';
+import { VscAzure, VscAzureDevops } from 'react-icons/vsc';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 /> },
@@ -19,6 +20,12 @@ const skills = [
   { name: 'AWS', icon: <FaAws /> },
   { name: 'MySQL', icon: <SiMysql /> },
   { name: 'MongoDB', icon: <SiMongodb /> },
+  { name: 'Jinja', icon : <SiJinja/>},
+  { name: 'Tailwind', icon : <SiTailwindcss/>},
+  { name: 'JUnit5', icon : <SiJunit5/>},
+  { name: 'Monogame', icon : <SiMonogame/>},
+  { name: 'DevOps', icon: <VscAzureDevops/>},
+  { name: 'Azure', icon: <VscAzure/>}
 ];
 
 const Skills = () => {
