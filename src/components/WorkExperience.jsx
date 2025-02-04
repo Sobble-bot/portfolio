@@ -1,32 +1,34 @@
-import './WorkExperience.css'
+import { useTranslation } from 'react-i18next';
+import './WorkExperience.css';
 
 const WorkExperience = () => {
-    const experiences = [
-      {
-        title: 'Software Engineer Intern',
-        company: 'SConcept',
-        duration: 'May 2024 - August 2024',
-        description:
-          'Developed and maintained front-end features using React and Tailwind. Collaborated with colleagues in Agile scrum.',
-      }
-    ]
+  const { t } = useTranslation();
 
-return (
+  const experiences = [
+    {
+      title: t('software_engineer_intern'),
+      company: t('sconcept'),
+      duration: t('work_experience_duration'),
+      description: t('work_experience_description'),
+    },
+  ];
+
+  return (
     <section id="work" className="work-section">
-        <h2>Work Experience</h2>
-        <p>Here is a summary of my work experience:</p>
-        <div className="work-grid">
+      <h2>{t('work_experience_title')}</h2>
+      <p>{t('work_experience_summary')}</p>
+      <div className="work-grid">
         {experiences.map((experience, index) => (
-            <div key={index} className="work-card">
+          <div key={index} className="work-card">
             <h3>{experience.title}</h3>
             <h4>{experience.company}</h4>
             <p className="duration">{experience.duration}</p>
             <p>{experience.description}</p>
-            </div>
+          </div>
         ))}
-        </div>
+      </div>
     </section>
-    );
+  );
 };
-    
+
 export default WorkExperience;

@@ -1,67 +1,78 @@
+import { useTranslation } from 'react-i18next';
 import './Projects.css';
-// import externalLink from '../assets/externalLink.png';
 import county from '../assets/county.png';
 import firstresponder from '../assets/firstresponder.png';
-import workoutrecipe from '../assets/workoutrecipe.png'
-import mobileproj from '../assets/mobileproj.png'
+import workoutrecipe from '../assets/workoutrecipe.png';
+import mobileproj from '../assets/mobileproj.png';
 
-const projects = [
-  {
-    name: 'Workout Recipe',
-    description: 'A gym recipe GUI application built with AvaloniaUI so that users can create their recipe and show it to other users on the same platform.',
-    language: 'C#',
-    link: 'https://github.com/Sobble-bot/C--Avalonia-project',
-    image: workoutrecipe
-  },
-  {
-    name: 'Medical App',
-    description: 'A Flask-based medical web application with RESTful APIs that allows users to take appointments and doctors had privileges that could allow them to accept or deny the appointment.',
-    language: 'Python',
-    link: 'https://github.com/Sobble-bot/flask-project-420',
-    image: firstresponder
-  },
-  {
-    name: 'Book Reading App',
-    description: 'A modern Android application for book enthusiasts, built with Jetpack Compose and following Material Design principles.',
-    language: 'Kotlin',
-    link: 'https://github.com/Sobble-bot/mobile-project-511',
-    image: mobileproj
-  },
-  {
-    name: 'US Counties Crime Analysis App',
-    description: 'A data visualization application designed to analyze crime data in conjunction with economic and demographic factors across US counties by using the MERN stack',
-    language: 'JavaScript',
-    link: 'https://github.com/Sobble-bot/Web-MERN-project-520',
-    image: county
-  },
-];
+const Projects = () => {
+  const { t } = useTranslation();
 
-const Projects = () => (
-  <section className="projects-section" id='projects'>
-    <h2>Projects</h2>
-    <p>Explore some of my projects below. Feel free to check!</p>
-    <div className="projects-grid">
-      {projects.map((project, index) => (
-        <div key={index} className="project-card">
-          <h3>
+  const projects = [
+    {
+      name: t('workout_recipe_title'),
+      description: t('workout_recipe_description'),
+      language: 'C#',
+      link: 'https://github.com/Sobble-bot/C--Avalonia-project',
+      image: workoutrecipe
+    },
+    {
+      name: t('medical_app_title'),
+      description: t('medical_app_description'),
+      language: 'Python',
+      link: 'https://github.com/Sobble-bot/flask-project-420',
+      image: firstresponder
+    },
+    {
+      name: t('book_reading_app_title'),
+      description: t('book_reading_app_description'),
+      language: 'Kotlin',
+      link: 'https://github.com/Sobble-bot/mobile-project-511',
+      image: mobileproj
+    },
+    {
+      name: t('us_counties_crime_title'),
+      description: t('us_counties_crime_description'),
+      language: 'JavaScript',
+      link: 'https://github.com/Sobble-bot/Web-MERN-project-520',
+      image: county
+    },
+  ];
+
+  return (
+    <section className="projects-section" id="projects">
+      <h2>{t('projects_title')}</h2>
+      <p>{t('projects_intro')}</p>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                {project.name}
+              </a>
+            </h3>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              {project.name} 
+              <img src={project.image} alt={project.name} className="project-image" />
             </a>
-          </h3>
-          <a href = {project.link} target='_blank' rel='noopener no referrer'>
-          <img src={project.image} alt='project' className='project-image'/>
-          </a>
-          <p>{project.description}</p>
-          <div className="project-info">
-            <span className="language">{project.language}</span>
-            <span>
-            <a href = {project.link} target='_blank' rel='noopener no referrer' className='code-link'> Link to Code</a>
-            </span>
+            <p>{project.description}</p>
+            <div className="project-info">
+              <span className="language">{project.language}</span>
+              <span>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="code-link"
+                >
+                  {t('link_to_code')}
+                </a>
+              </span>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Projects;
