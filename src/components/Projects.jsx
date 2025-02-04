@@ -1,30 +1,38 @@
 import './Projects.css';
-import externalLink from '../assets/externalLink.png';
+// import externalLink from '../assets/externalLink.png';
+import county from '../assets/county.png';
+import firstresponder from '../assets/firstresponder.png';
+import workoutrecipe from '../assets/workoutrecipe.png'
+import mobileproj from '../assets/mobileproj.png'
 
 const projects = [
   {
-    name: 'C# Avalonia Project',
+    name: 'Workout Recipe',
     description: 'A gym recipe GUI application built with AvaloniaUI so that users can create their recipe and show it to other users on the same platform.',
     language: 'C#',
     link: 'https://github.com/Sobble-bot/C--Avalonia-project',
+    image: workoutrecipe
   },
   {
-    name: 'Flask Project 420',
+    name: 'Medical App',
     description: 'A Flask-based medical web application with RESTful APIs that allows users to take appointments and doctors had privileges that could allow them to accept or deny the appointment.',
     language: 'Python',
     link: 'https://github.com/Sobble-bot/flask-project-420',
+    image: firstresponder
   },
   {
-    name: 'Mobile Project 511',
+    name: 'Book Reading App',
     description: 'A modern Android application for book enthusiasts, built with Jetpack Compose and following Material Design principles.',
     language: 'Kotlin',
     link: 'https://github.com/Sobble-bot/mobile-project-511',
+    image: mobileproj
   },
   {
-    name: 'Web MERN Project 520',
+    name: 'US Counties Crime Analysis App',
     description: 'A data visualization application designed to analyze crime data in conjunction with economic and demographic factors across US counties by using the MERN stack',
     language: 'JavaScript',
     link: 'https://github.com/Sobble-bot/Web-MERN-project-520',
+    image: county
   },
 ];
 
@@ -40,13 +48,14 @@ const Projects = () => (
               {project.name} 
             </a>
           </h3>
+          <a href = {project.link} target='_blank' rel='noopener no referrer'>
+          <img src={project.image} alt='project' className='project-image'/>
+          </a>
           <p>{project.description}</p>
           <div className="project-info">
             <span className="language">{project.language}</span>
             <span>
-            <a href = {project.link} target='_blank' rel='noopener no referrer'>
-            <img src={externalLink} alt="External Link" className="external"/>
-            </a>
+            <a href = {project.link} target='_blank' rel='noopener no referrer' className='code-link'> Link to Code</a>
             </span>
           </div>
         </div>

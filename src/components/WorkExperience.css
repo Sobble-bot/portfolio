@@ -1,0 +1,64 @@
+.work-section {
+padding: 4rem 2rem;
+background-color: #0b0b0b;
+color: #ffffff;
+text-align: center;
+}
+
+.work-section h2 {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+.work-section p {
+margin-bottom: 2rem;
+font-size: 1rem;
+color: #bbbbbb;
+}
+
+.work-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.work-card {
+background-color: #1e1e1e;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+padding: 1.5rem;
+width: calc(50% - 2rem);
+text-align: left;
+}
+
+.work-card h3 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+color: #ffffff;
+}
+
+.work-card h4 {
+font-size: 1.2rem;
+margin-bottom: 0.5rem;
+color: #1e90ff;
+}
+
+.work-card .duration {
+font-size: 0.9rem;
+margin-bottom: 1rem;
+color: #bbbbbb;
+}
+
+.work-card p {
+font-size: 1rem;
+line-height: 1.6;
+color: #dddddd;
+}
+
+@media (max-width: 768px) {
+    .work-card{
+        width: auto;
+    }
+}

@@ -24,7 +24,7 @@
     background-color: #35383e;
     border-radius: 8px;
     padding: 1.5rem;
-    width: calc(50% - 2rem); /* Two cards per row */
+    width: calc(50% - 2rem);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
   }
@@ -70,3 +70,31 @@
   .external:hover{
     color: #35383e;
   }
+  
+  .project-image{
+    width: 371.74px;
+    height: 200px;
+  }
+
+  .code-link{
+    background-color: #1e90ff;
+    padding: 10px;
+    border-radius: 25px;
+  }
+
+  .code-link:hover{
+    background-color: #9cb8d3;
+  }
+
+  @media (max-width: 768px) {
+    .project-image{
+      width: 225px;
+      height: 121px;
+    }
+
+    .project-card{
+      width: auto;
+    }
+  
+  }
+

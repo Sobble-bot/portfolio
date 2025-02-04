@@ -38,7 +38,11 @@
 }
 
 .resume-button:hover {
-  background-color: #0066cc;
+  background-color: #9cb8d3;
+}
+
+.profile-picture {
+  background-color: #9cb8d3;
 }
 
 @media (max-width: 768px) {
@@ -53,5 +57,7 @@
 
   .profile-picture{
     max-width: 303px;
+    height: auto;
+    width: auto;
   }
 }
