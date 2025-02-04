@@ -17,7 +17,14 @@ const Profile = () => {
           I am a software developer with a passion for innovative software solutions. 
           Seeking opportunities to enhance technical skills and contribute to challenging projects. <br/> <br/>
 
-          <a href='https://drive.google.com/file/d/1ZRtEea9A6xGH8Zc30pooQEGXMN9qFwta/view?usp=sharing' className='resume-button' target='blank'>Get My Resume</a>
+          <a 
+            href='/CV2025.pdf' 
+            className='resume-button' 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            download="Jackson_Tran_CV2025.pdf">
+            Get My Resume
+          </a>
         </p>
       </div>
     </section>
