@@ -2,6 +2,7 @@ import './Skills.css';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaAws, FaDocker, FaPython, FaJava } from 'react-icons/fa';
 import { SiKotlin, SiLinux, SiMysql, SiMongodb, SiExpress, SiFlask, SiJinja, SiTailwindcss, SiJunit5, SiMonogame } from 'react-icons/si';
 import { VscAzure, VscAzureDevops } from 'react-icons/vsc';
+import { useTranslation } from 'react-i18next';
 
 const skills = [
   { name: 'HTML5', icon: <FaHtml5 /> },
@@ -29,9 +30,11 @@ const skills = [
 ];
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="skills-section" id='skills'>
-      <h2>Skills</h2>
+      <h2>{t('skills')}</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill">

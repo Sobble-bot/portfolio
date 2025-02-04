@@ -20,7 +20,9 @@
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem; 
+    margin: 0 auto; 
+    text-align: center;
   }
   
   .nav-links a {
@@ -46,6 +48,34 @@
   .nav-links a:hover::after {
     width: 100%; 
   }
+
+  .lang-button {
+    background-color: transparent; 
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white; 
+    padding: 5px 10px; 
+    margin: 0 5px; 
+    cursor: pointer; 
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+  }
+  
+  .lang-button:hover {
+    background-color: white; 
+    color: black;
+  }
+  
+  .language-switcher {
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+  }
+  
+  .language-switcher {
+    margin-left: auto; 
+  }
+
 
 @media (max-width: 768px) {
   .navbar {
@@ -73,6 +103,7 @@
     width: 100%; 
   }
 }
+
 
   
   
