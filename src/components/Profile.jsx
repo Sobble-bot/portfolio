@@ -3,7 +3,11 @@ import './Profile.css';
 import jack from '../assets/jack.png';
 
 const Profile = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+
+  const resumeLink = i18n.language === 'fr' ? '/CV2025FR.pdf' : '/CV2025.pdf';
+  const resumeFileName = i18n.language === 'fr' ? 'Jackson_Tran_CV2025_FR.pdf' : 'Jackson_Tran_CV2025_EN.pdf';
 
   return (
     <section id="profile" className="profile-section">
@@ -16,11 +20,11 @@ const Profile = () => {
           {t('introduction_paragraph1')} <br /> <br />
           {t('introduction_paragraph2')} <br /> <br />
           <a 
-            href="/CV2025.pdf" 
+            href={resumeLink} 
             className="resume-button" 
             target="_blank" 
             rel="noopener noreferrer" 
-            download="Jackson_Tran_CV2025.pdf"
+            download={resumeFileName}
           >
             {t('resume_button')}
           </a>
